@@ -4734,14 +4734,15 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.EightDir.Acts.SimulateControl,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Keyboard.Cnds.OnAnyKey,
+		C3.Plugins.System.Cnds.Every,
+		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.Sprite.Cnds.PickDistance,
 		C3.Plugins.Sprite.Acts.SetPosToObject,
-		C3.Plugins.Sprite.Acts.SetPos,
-		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.Text.Acts.AppendText,
 		C3.Plugins.Spritefont2.Cnds.IsVisible,
+		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Sprite.Acts.SetSolidCollisionFilter,
 		C3.Plugins.Spritefont2.Acts.SetPosToObject,
 		C3.Plugins.Text.Cnds.IsVisible,
@@ -4995,8 +4996,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(1080);
-		},
-		() => 600
+		}
 ];
 
 

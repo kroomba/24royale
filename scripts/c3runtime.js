@@ -4737,11 +4737,11 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.PickDistance,
 		C3.Plugins.Sprite.Acts.SetPosToObject,
 		C3.Plugins.Sprite.Acts.SetPos,
-		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.Text.Acts.SetVisible,
 		C3.Plugins.Text.Acts.AppendText,
 		C3.Plugins.Spritefont2.Cnds.IsVisible,
+		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.Sprite.Acts.SetSolidCollisionFilter,
 		C3.Plugins.Spritefont2.Acts.SetPosToObject,
 		C3.Plugins.Text.Cnds.IsVisible,
@@ -4976,7 +4976,7 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpBehavior() - 25);
 		},
-		() => "Joshua Franklin",
+		() => "Joshua Frankin:(",
 		() => 5,
 		() => 8,
 		() => 1.5,
@@ -4995,8 +4995,7 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0(1080);
-		},
-		() => 600
+		}
 ];
 
 
